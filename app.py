@@ -6,11 +6,8 @@ import pandas as pd
 from smolagents import tool, CodeAgent, OpenAIServerModel, DuckDuckGoSearchTool
 from tools import read_image, transcribe_audio, run_video, search_wikipedia, read_code
 
-# --- Constants ---
-DEFAULT_API_URL = "https://agents-course-unit4-scoring.hf.space"
 model_id = "gpt-4.1"
 
-# --- Basic Agent Definition ---
 class BasicAgent:
     def __init__(self, model_id=model_id):
         model = OpenAIServerModel(model_id=model_id, temperature=0.1)
@@ -39,7 +36,7 @@ def run_all():
     Fetches all questions, runs the BasicAgent on them, and displays the results.
     """
 
-    api_url = DEFAULT_API_URL
+    api_url = "https://agents-course-unit4-scoring.hf.space"
     questions_url = f"{api_url}/questions"
     submit_url = f"{api_url}/submit"
 

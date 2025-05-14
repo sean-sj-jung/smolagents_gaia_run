@@ -1,0 +1,9 @@
+gradio
+requests
+smolagents
+openai
+av
+pytube
+duckduckgo-search
+yt-dlp
+Wikipedia-API
